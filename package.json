@@ -1,13 +1,13 @@
 {
-    "name": "express-mvc",
+    "name": "express-mvc-make",
     "version": "1.1.1",
-    "description": "make express demo as fast as you can",
+    "description": "make express mvc as fast as you can",
     "main": "index.js",
     "scripts": {
         "test": "node index.js"
     },
     "bin": {
-        "express-mvc": "index.js"
+        "express-mvc-make": "index.js"
     },
     "repository": {
         "type": "git",
@@ -17,6 +17,7 @@
         "express",
         "mongoose",
         "npm",
+        "mvc",
         "express-generator"
     ],
     "author": "Harsh Dobariya",
