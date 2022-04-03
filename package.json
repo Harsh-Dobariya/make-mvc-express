@@ -1,5 +1,5 @@
 {
-    "name": "express-mvc-make",
+    "name": "express-mvc-generator",
     "version": "0.1.1",
     "description": "make express mvc as fast as you can",
     "main": "index.js",
@@ -7,7 +7,7 @@
         "test": "node index.js"
     },
     "bin": {
-        "express-mvc-make": "index.js"
+        "express-mvc-generator": "index.js"
     },
     "repository": {
         "type": "git",
