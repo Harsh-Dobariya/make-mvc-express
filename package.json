@@ -1,0 +1,34 @@
+{
+    "name": "express-model",
+    "version": "1.0.0",
+    "description": "make express demo as fast as you can",
+    "main": "index.js",
+    "scripts": {
+        "test": "node index.js"
+    },
+    "bin": {
+        "express-model": "index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Harsh-Dobariya/express-model.git"
+    },
+    "keywords": [
+        "express",
+        "mongoose",
+        "npm",
+        "express-generator"
+    ],
+    "author": "Harsh Dobariya",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Harsh-Dobariya/express-model/issues"
+    },
+    "homepage": "https://github.com/Harsh-Dobariya/express-model#readme",
+    "dependencies": {
+        "debug": ">=4.3.4",
+        "express": ">=4.17.3",
+        "express-async-errors": ">=3.1.1",
+        "mongoose": ">=6.2.9"
+    }
+}
