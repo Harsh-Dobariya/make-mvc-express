@@ -140,3 +140,12 @@ fs.writeFile(
 fs.writeFile(".gitignore", `node_modules/\n*.env.*`, (err) => {
     if (err) console.log(err);
 });
+
+fs.writeFile(
+    ".env.development",
+    `PORT=3000
+MONGODB_URL=mongodb://localhost/express-demo`,
+    (err) => {
+        if (err) console.log(err);
+    }
+);
