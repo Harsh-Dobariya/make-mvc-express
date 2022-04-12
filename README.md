@@ -2,7 +2,7 @@
 # make-mvc-express
 
 
-## Installation
+## Make MVC structure
 
 Install my-project with npx
 
@@ -17,6 +17,9 @@ To run this project, you will need to add the following environment variables to
 `PORT`
 
 `MONGODB_URL`
+
+`JWT_PRIVATE_KEY`
+
 ## Run Locally
 
 Make MVC Structure
