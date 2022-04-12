@@ -79,8 +79,7 @@ const info = debug("info"),
     errors = debug("error"),
     mongooseDebug = debug("mongoose");
 
-module.exports = { info, errors, mongooseDebug};
-    `,
+module.exports = { info, errors, mongooseDebug};`,
     (err) => {
         if (err) console.log(err);
     }
@@ -96,8 +95,8 @@ fs.writeFile(
     openapi: "3.0.0",
     info: {
         version: "1.0.0",
-        title: "E-commerce API",
-        description: "A basic E-commerce API",
+        title: "Make-mvc-express API",
+        description: "A basic make-mvc-express API",
         contact: {
             name: "Harsh Dobariya",
             email: "hdobariya229@gmail.com",
