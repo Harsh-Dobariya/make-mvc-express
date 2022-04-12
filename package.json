@@ -1,5 +1,5 @@
 {
-    "name": "express-auto-mvc",
+    "name": "make-mvc-express",
     "version": "1.0.0",
     "description": "make express mvc as fast as you can",
     "main": "index.js",
@@ -7,11 +7,11 @@
         "test": "node index.js"
     },
     "bin": {
-        "express-auto-mvc": "index.js"
+        "make-mvc-express": "index.js"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Harsh-Dobariya/express-model.git"
+        "url": "git+https://github.com/Harsh-Dobariya/make-mvc-express.git"
     },
     "keywords": [
         "express",
@@ -23,7 +23,7 @@
     "author": "Harsh Dobariya",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Harsh-Dobariya/express-model/issues"
+        "url": "https://github.com/Harsh-Dobariya/make-mvc-express/issues"
     },
-    "homepage": "https://github.com/Harsh-Dobariya/express-model#readme"
+    "homepage": "https://github.com/Harsh-Dobariya/make-mvc-express#readme"
 }
