@@ -31,8 +31,6 @@ fs.writeFile(
     "config/passport.js",
     `const { Strategy, ExtractJwt } = require("passport-jwt"),
     { User } = require("../models/user"),
-    { Seller } = require("../models/seller"),
-    { Admin } = require("../models/admin"),
     passport = require("passport"),
     options = {
         jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
@@ -49,32 +47,7 @@ passport.use(
             })
             .catch((err) => done(err));
     })
-);
-
-passport.use(
-    "seller",
-    new Strategy(options, (decoded, done) => {
-        Seller.findById(decoded._id)
-            .then((seller) => {
-                if (!seller) return done(null, false);
-                done(null, seller);
-            })
-            .catch((err) => done(err));
-    })
-);
-
-passport.use(
-    "admin",
-    new Strategy(options, (decoded, done) => {
-        Admin.findById(decoded._id)
-            .then((admin) => {
-                if (!admin) return done(null, false);
-                done(null, admin);
-            })
-            .catch((err) => done(err));
-    })
-);
-`,
+);`,
     (err) => {
         if (err) console.log(err);
     }
@@ -155,10 +128,7 @@ fs.writeFile(
 fs.writeFile(
     "docs/index.js",
     `const basicInfo = require("./basicInfo"),
-    servers = require("./servers"),
-    components = require("./components"),
-    tags = require("./tags"),
-    paths = require("./paths");
+    servers = require("./servers");
 
 module.exports = {
     ...basicInfo,
@@ -259,7 +229,10 @@ BASE_URL=http://localhost:3000
 PORT=3000
 
 # Database configuration
-MONGODB_URL=mongodb://localhost/Express-mvc`,
+MONGODB_URL=mongodb://localhost/Express-mvc
+
+# Keys configuration
+JWT_PRIVATE_KEY=secretKey`,
     (err) => {
         if (err) console.log(err);
     }
@@ -308,7 +281,7 @@ fs.writeFile(
     `const app = require("express")();
 
 require("express-async-errors");
-require("./config/mongoose")(app);
+require("./config/database")(app);
 require("./config/passport");
 require("./routes")(app);`,
     (err) => {
