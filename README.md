@@ -55,5 +55,22 @@ I'm a full stack developer...
 
 
 ## 🛠 Skills
-Javascript, HTML, CSS, Python, Node Js, MongoDB, MySQL
+### Languages
+
+![C++](https://img.shields.io/badge/-C++-000?&logo=c%2b%2b&logoColor=00599C)
+![Java](https://img.shields.io/badge/-Java-000?&logo=java)
+![JavaScript](https://img.shields.io/badge/-JavaScript-000?&logo=JavaScript)
+![Python](https://img.shields.io/badge/-Python-000?&logo=Python)
+![HTML5](https://img.shields.io/badge/-HTML5-000?&logo=HTML5)
+![CSS3](https://img.shields.io/badge/-CSS3-000?&logo=CSS3)
+
+### Technologies
+
+![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)
+![MongoDB](https://img.shields.io/badge/-MongoDB-000?&logo=mongodb)
+![Swagger](https://img.shields.io/badge/-Swagger-000?&logo=swagger)
+![MySQL](https://img.shields.io/badge/-MySQL-000?&logo=mysql)
+![Postman](https://img.shields.io/badge/-Postman-000?&logo=postman)
+![Git](https://img.shields.io/badge/-Git-000?&logo=git)
+![Github](https://img.shields.io/badge/-Github-000?&logo=github)
 
