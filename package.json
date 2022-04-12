@@ -1,13 +1,13 @@
 {
-    "name": "express-mvc-project",
-    "version": "0.4.5",
+    "name": "express-auto-mvc",
+    "version": "1.0.0",
     "description": "make express mvc as fast as you can",
     "main": "index.js",
     "scripts": {
         "test": "node index.js"
     },
     "bin": {
-        "express-mvc-project": "index.js"
+        "express-auto-mvc": "index.js"
     },
     "repository": {
         "type": "git",
