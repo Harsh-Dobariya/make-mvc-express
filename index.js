@@ -259,7 +259,7 @@ BASE_URL=http://localhost:3000
 PORT=3000
 
 # Database configuration
-MONGODB_URL=mongodb://localhost/Harsh`,
+MONGODB_URL=mongodb://localhost/Express-mvc`,
     (err) => {
         if (err) console.log(err);
     }
