@@ -104,7 +104,7 @@ fs.writeFile(
 
 const info = debug("info"),
     errors = debug("error"),
-    mongooseDebug = debug("mongoose"),
+    mongooseDebug = debug("mongoose");
 
 module.exports = { info, errors, mongooseDebug};
     `,
