@@ -229,7 +229,7 @@ fs.writeFile(
     "routes/index.js",
     `const express = require("express"),
     swaggerUI = require("swagger-ui-express"),
-    docs = require("../docs"),
+    docs = require("../docs");
 
 module.exports = (app) => {
     app.use(require("cors")());
