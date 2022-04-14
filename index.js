@@ -6,6 +6,34 @@ fs.mkdir("config", { recursive: true }, (err) => {
     if (err) console.log(err);
 });
 
+fs.mkdir("controllers", { recursive: true }, (err) => {
+    if (err) console.log(err);
+});
+
+fs.mkdir("debugging", { recursive: true }, (err) => {
+    if (err) console.log(err);
+});
+
+fs.mkdir("docs", { recursive: true }, (err) => {
+    if (err) console.log(err);
+});
+
+fs.mkdir("middleware", { recursive: true }, (err) => {
+    if (err) console.log(err);
+});
+
+fs.mkdir("models", { recursive: true }, (err) => {
+    if (err) console.log(err);
+});
+
+fs.mkdir("routes", { recursive: true }, (err) => {
+    if (err) console.log(err);
+});
+
+fs.mkdir("services", { recursive: true }, (err) => {
+    if (err) console.log(err);
+});
+
 fs.writeFile(
     "config/database.js",
     `const { info, mongooseDebug } = require("../debugging/debug"),
@@ -53,10 +81,6 @@ passport.use(
     }
 );
 
-fs.mkdir("controllers", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
-
 fs.writeFile(
     "controllers/users.js",
     `const { User } = require("../models/user")
@@ -66,10 +90,6 @@ module.exports = { };`,
         if (err) console.log(err);
     }
 );
-
-fs.mkdir("debugging", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
 
 fs.writeFile(
     "debugging/debug.js",
@@ -84,10 +104,6 @@ module.exports = { info, errors, mongooseDebug};`,
         if (err) console.log(err);
     }
 );
-
-fs.mkdir("docs", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
 
 fs.writeFile(
     "docs/basicInfo.js",
@@ -138,10 +154,6 @@ module.exports = {
     }
 );
 
-fs.mkdir("middleware", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
-
 fs.writeFile(
     "middleware/errors.js",
     `const { errors } = require("../debugging/debug");
@@ -162,10 +174,6 @@ module.exports = (err, req, res, next) => {
     }
 );
 
-fs.mkdir("models", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
-
 fs.writeFile(
     "models/user.js",
     `const mongoose = require("mongoose");
@@ -179,10 +187,6 @@ module.exports = { User }`,
         if (err) console.log(err);
     }
 );
-
-fs.mkdir("routes", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
 
 fs.writeFile(
     "routes/users.routes.js",
@@ -213,10 +217,6 @@ module.exports = (app) => {
         if (err) console.log(err);
     }
 );
-
-fs.mkdir("services", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
 
 fs.writeFile(
     ".env.development",
