@@ -1,6 +1,6 @@
 {
     "name": "make-mvc-express",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "make express mvc as fast as you can",
     "main": "index.js",
     "scripts": {

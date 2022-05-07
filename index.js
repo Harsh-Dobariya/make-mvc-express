@@ -2,37 +2,21 @@
 
 const fs = require("fs");
 
-fs.mkdir("config", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
+fs.mkdirSync("config", { recursive: true });
 
-fs.mkdir("controllers", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
+fs.mkdirSync("controllers", { recursive: true });
 
-fs.mkdir("debugging", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
+fs.mkdirSync("debugging", { recursive: true });
 
-fs.mkdir("docs", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
+fs.mkdirSync("docs", { recursive: true });
 
-fs.mkdir("middleware", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
+fs.mkdirSync("middleware", { recursive: true });
 
-fs.mkdir("models", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
+fs.mkdirSync("models", { recursive: true });
 
-fs.mkdir("routes", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
+fs.mkdirSync("routes", { recursive: true });
 
-fs.mkdir("services", { recursive: true }, (err) => {
-    if (err) console.log(err);
-});
+fs.mkdirSync("services", { recursive: true });
 
 fs.writeFile(
     "config/database.js",
